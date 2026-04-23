@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "io.github.libxposed.example"
+    namespace = "ac.no.screenshot"
     compileSdk = 36
     buildToolsVersion = "36.1.0"
 
@@ -42,6 +42,7 @@ android {
     lint {
         abortOnError = true
         checkReleaseBuilds = false
+        disable 'BlockedPrivateApi'
     }
 }
 
